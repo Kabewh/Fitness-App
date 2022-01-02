@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/logo4"
+        android:layout_width="203dp"
+        android:layout_height="194dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/logo"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/line_6"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <View
+        android:id="@+id/line_"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <View
+        android:id="@+id/line_3"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <View
+        android:id="@+id/line_5"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <View
+        android:id="@+id/line_8"
+        android:layout_width="413dp"
+        android:layout_height="1dp"
+        android:background="@drawable/separator_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textAppearance="@style/login"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/line_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_2"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loseweighticonBtn"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/returnarrow"
+        android:clickable="true"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="96dp"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:text="Me"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Height"
+        android:textAppearance="@style/login"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/line_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textAppearance="@style/login"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/line_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_3"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Level"
+        android:textAppearance="@style/login"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/line_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_4"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textAppearance="@style/login"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/line_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_5"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textAppearance="@style/login"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/line_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_6" />
+
+    <TextView
+        android:id="@+id/meUsername"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:textAppearance="@style/login"
+        app:layout_constraintBottom_toTopOf="@+id/line_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/line_2" />
+
+    <TextView
+        android:id="@+id/meWeight"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:textAppearance="@style/login"
+        android:textColor="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/line_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/line_3"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/meWeight2"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:elevation="20dp"
+        android:text="Kg"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/login"
+        app:layout_constraintBottom_toTopOf="@+id/line_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/line_3"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/meActivityLevel"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/login"
+        android:textColor="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/line_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/line_4"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <TextView
+        android:id="@+id/meGender"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:textAppearance="@style/login"
+        android:textColor="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/line_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/line_5"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/meAge"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:textAppearance="@style/login"
+        android:textColor="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/line_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/line_6" />
+
+    <TextView
+        android:id="@+id/meAge2"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:elevation="20dp"
+        android:text="Years"
+        android:textAlignment="center"
+        android:textAppearance="@style/login"
+        app:layout_constraintBottom_toTopOf="@+id/line_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/line_6" />
+
+    <TextView
+        android:id="@+id/meHeight"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:textAppearance="@style/login"
+        android:textColor="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/line_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/line_"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+        android:id="@+id/meHeight2"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:elevation="20dp"
+        android:text="Cm"
+        android:textAlignment="center"
+        android:textAppearance="@style/login"
+        app:layout_constraintBottom_toTopOf="@+id/line_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/line_"
+        app:layout_constraintVertical_bias="0.515" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

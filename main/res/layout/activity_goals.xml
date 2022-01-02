@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp">
+
+
+    <View
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/logo3"
+        android:layout_width="336dp"
+        android:layout_height="322dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/logo"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <RelativeLayout
+        android:id="@+id/frame_12"
+        android:layout_width="378dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        android:clickable="false"
+        android:clipToOutline="true"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311">
+
+        <TextView
+            android:id="@+id/goal_string"
+            android:layout_width="315dp"
+            android:layout_height="146dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="11dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:requiresFadingEdge="vertical|none"
+            android:text="@string/goals_string"
+            android:textAppearance="@style/take_contro" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loseWeightBtn"
+        android:layout_width="310dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_2"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/maintainBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_12"
+        app:layout_constraintVertical_bias="0.7"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gainWeightBtn"
+        android:layout_width="310dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_2"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintainBtn"
+        app:layout_constraintVertical_bias="0.141"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/maintainBtn"
+        android:layout_width="310dp"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/rectangle_2"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_12"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="@string/lose_weight"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/username"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Maintain"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/username"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/maintainBtn"
+        app:layout_constraintEnd_toEndOf="@+id/maintainBtn"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="@+id/maintainBtn"
+        app:layout_constraintTop_toTopOf="@+id/maintainBtn" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Gain Weight"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/username"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gainWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/gainWeightBtn"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="@+id/gainWeightBtn"
+        app:layout_constraintTop_toTopOf="@+id/gainWeightBtn" />
+
+    <View
+        android:id="@+id/loseweighticon"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/weightlossicon"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <View
+        android:id="@+id/maintainweighticon"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/maintainweighticon"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/maintainBtn"
+        app:layout_constraintEnd_toEndOf="@+id/maintainBtn"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/maintainBtn"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <View
+        android:id="@+id/maintainweighticon2"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/weightscale"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gainWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/gainWeightBtn"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/gainWeightBtn"
+        app:layout_constraintVertical_bias="0.592" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

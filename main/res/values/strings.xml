@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">FitnessTrackerApp</string>
+    <string name="register">REGISTER</string>
+    <string name="username">Username</string>
+    <string name="enter_username">Enter username...</string>
+    <string name="enter_password">Enter password...</string>
+    <string name="confirm_password">Confirm password...</string>
+    <string name="greutate">Greutate</string>
+    <string name="femeie">Femeie</string>
+    <string name="barbat">Barbat</string>
+    <string name="sex">Sex:</string>
+    <string name="calculator_calorii">Calculator calorii</string>
+    <string name="varsta">Varsta:</string>
+    <string name="slabesc">Slabesc</string>
+    <string name="mentin">Mentin</string>
+    <string name="ingras">Ingras</string>
+    <string name="vreau_sa">Vreau sa:</string>
+    <string name="calculeaza">Calculeaza</string>
+    <string name="nivelul_de_activitate">Nivelul de activitate</string>
+    <string name="activ">activ</string>
+    <string name="moderat">moderat</string>
+    <string name="sedentar">sedentar</string>
+    <string name="calories">Calories:</string>
+    <string name="textview">TextView</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="take_contro">
+Take control of your weight now!
+    </string>/>
+    <string name="goals_string">
+What are your goals?
+    </string>
+    <string name="lose_weight">Lose Weight</string>
+    <string name="calories_remaining">Calories Remaining</string>/>
+    <string-array name="activity_level">
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Very Active</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_manage_weight">manageWeightActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

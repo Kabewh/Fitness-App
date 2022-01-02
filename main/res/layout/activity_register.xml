@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/canvas3312"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/username5"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/password"
+        android:textAppearance="@style/username"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/loseWeightBtn13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loseWeightBtn3" />
+
+    <TextView
+        android:id="@+id/username7"
+        android:layout_width="208dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="Confirm Password"
+        android:textAppearance="@style/username"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/loseWeightBtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loseWeightBtn13" />
+
+    <TextView
+        android:id="@+id/username6"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/username"
+        android:textAppearance="@style/username"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/loseWeightBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
+
+    <EditText
+        android:id="@+id/edtTxtUsername"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        android:hint="Enter username..."
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn3"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn3"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn3"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn3"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <View
+        android:id="@+id/login_user_331231"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:elevation="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/usernameicon"
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn3"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtUsername"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn3"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn3" />
+
+
+    <View
+        android:id="@+id/loseWeightBtn13"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas3312"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <View
+        android:id="@+id/loseWeightBtn3"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas3312"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <View
+        android:id="@+id/loseWeightBtn4"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas3312"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <EditText
+        android:id="@+id/edtTxtPassword"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter password..."
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn13"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn13"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn13"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn13"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <EditText
+        android:id="@+id/edtTxtConfirmPassword"
+        android:layout_width="172dp"
+        android:layout_height="37dp"
+        android:background="@android:color/transparent"
+        android:hint="Confirm password..."
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn4"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn4"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn4"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn4"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <View
+        android:id="@+id/login_user_3312321"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/passwordicon"
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn13"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn13"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn13" />
+
+    <View
+        android:id="@+id/login_user_4"
+        android:layout_width="56dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/passwordicon"
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn4"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtUsername"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn4"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn4"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <View
+        android:id="@+id/logo5435"
+        android:layout_width="413dp"
+        android:layout_height="402dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="392dp"
+        android:background="@drawable/logo"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas3312"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerBtn"
+        android:layout_width="155dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        android:elevation="10dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loseWeightBtn4"
+        app:layout_constraintVertical_bias="0.232"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272727"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <View
+        android:id="@+id/loseWeightBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="384dp"
+        android:layout_marginBottom="298dp"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_"
+        app:layout_constraintTop_toTopOf="@+id/canvas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/rectangle_"
+        android:layout_width="249dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loseWeightBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/username3"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/username"
+        android:textAppearance="@style/username"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/loseWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="413dp"
+        android:layout_height="402dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/logo"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/loseWeightBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/password"
+        android:textAppearance="@style/username"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loseWeightBtn"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <View
+        android:id="@+id/login_user_"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:elevation="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/usernameicon"
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/canvas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/canvas"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <View
+        android:id="@+id/closed_lock"
+        android:layout_width="59dp"
+        android:layout_height="35dp"
+        android:elevation="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/passwordicon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+        app:layout_constraintEnd_toEndOf="@+id/canvas"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="@+id/canvas"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="155dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        android:elevation="4dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_"
+        app:layout_constraintVertical_bias="0.108"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <EditText
+        android:id="@+id/edtTxtUsernameLogin"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter username..."
+        app:layout_constraintBottom_toBottomOf="@+id/loseWeightBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loseWeightBtn"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="@+id/loseWeightBtn"
+        app:layout_constraintTop_toTopOf="@+id/loseWeightBtn"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <EditText
+        android:id="@+id/edtTxtPasswordLogin"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter password..."
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <Button
+        android:id="@+id/noAccountButton"
+        android:layout_width="273dp"
+        android:layout_height="46dp"
+        android:background="@android:color/transparent"
+        android:text="No account? Create an account!"
+        android:textAppearance="@style/login"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/logo7"
+        android:layout_width="386dp"
+        android:layout_height="328dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="396dp"
+        android:background="@drawable/logo"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sdaablas"
+        android:layout_width="238dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="Enter your new weight"
+        android:textAppearance="@style/login"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Weight"
+        android:textAppearance="@style/login"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtGoalWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/txtCurrWeight2"
+        app:layout_constraintTop_toBottomOf="@+id/sdaablas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
+        android:text="Previous Weight"
+        android:textAppearance="@style/login"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCurrWeight"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCurrentWeight"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdaablas"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <TextView
+        android:id="@+id/txtCurrWeight"
+        android:layout_width="76dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:textAppearance="@style/login"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo7"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:id="@+id/txtCurrWeight2"
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Kg"
+        android:textAppearance="@style/login"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCurrentWeight"
+        app:layout_constraintEnd_toEndOf="@+id/canvas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextCurrentWeight"
+        app:layout_constraintTop_toBottomOf="@+id/sdaablas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loseweighticonbtn"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/returnarrow"
+        android:clickable="true"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/updateWeightBtn"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurrWeight"
+        app:layout_constraintVertical_bias="0.649"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="163dp"
+        android:layout_height="61dp"
+        android:indeterminate="false"
+        android:max="100"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <EditText
+        android:id="@+id/editTxtGoalWeight"
+        android:layout_width="76dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textAppearance="@style/login"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/logo7"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <EditText
+        android:id="@+id/editTextCurrentWeight"
+        android:layout_width="76dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textAppearance="@style/login"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdaablas"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateWeightBtn"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        android:elevation="4dp"
+        android:text="Update Weight"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.201"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
